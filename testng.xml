@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Wheel_parallel_suite" parallel="tests"
+	thread-count="4">
+
+	<test name="Windows7 mozila">
+		<parameter name="os" value="Windows 7" />
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.TestClass" />
+		</classes>
+	</test>
+
+	<test name="Windows7 chrome">
+		<parameter name="os" value="Windows 7" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="tests.TestClass" />
+		</classes>
+	</test>
+
+	<test name="Windows10 firefox">
+		<parameter name="os" value="Windows 10" />
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.TestClass" />
+		</classes>
+	</test>
+
+	<test name="Windows10 chrome">
+		<parameter name="os" value="Windows 10" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="tests.TestClass" />
+		</classes>
+	</test>
+
+</suite> <!-- Wheel_parallel_suite -->
